@@ -64,7 +64,6 @@ function processInput() {
         );
     } else if (expectedCommand === "generate") {
         const randomItems = generateKix();
-        const parsedPrice = parseFloat(priceInCents) / 100
         fs.writeFileSync(dataFilePath, JSON.stringify(randomItems, null, 2));
         result = "Random items generated and saved to products.json.";
     } else if (expectedCommand === "add") {

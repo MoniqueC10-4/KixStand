@@ -104,7 +104,7 @@ return "Not found";
 
 function viewBox() {
     for (let item of box) {
-        console.log(`Product: ${item.product}, Quantity: ${item.quantity}, Price: ${item.price}`);
+        console.log(`name: ${item.name}, Quantity: ${item.quantity}, Price: ${item.price}`);
     }
 }
 function calculateTotalPrice() {
