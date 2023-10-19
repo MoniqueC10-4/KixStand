@@ -1,0 +1,42 @@
+[
+  {
+    "id": "qin3p",
+    "priceInCents": "18869",
+    "inStock": true
+  },
+  {
+    "id": "7xng6",
+    "name": "Kwondo1/Peaceminusone",
+    "priceInCents": "15529",
+    "inStock": true,
+    "colorway": "White"
+  },
+  {
+    "id": "fydpv",
+    "name": "Air Force 1",
+    "priceInCents": "19081",
+    "inStock": false,
+    "colorway": "Black"
+  },
+  {
+    "id": "jcpdb",
+    "name": "Air Max BW OG",
+    "priceInCents": "11747",
+    "inStock": false,
+    "colorway": "Black/Persian Violet/White"
+  },
+  {
+    "id": "hgney",
+    "name": "Air Max 90 NRG",
+    "priceInCents": "12336",
+    "inStock": false,
+    "colorway": "Summit White/Grey Fog/Black"
+  },
+  {
+    "id": "3phuw",
+    "name": "Air Jordan 1 MID",
+    "priceInCents": "13873",
+    "inStock": false,
+    "colorway": "White/Tropical Twist/Black"
+  }
+]
