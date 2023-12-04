@@ -17,7 +17,7 @@
     "empty": "node index.js empty"
   },
   "keywords": [],
-  "author": "Monique",
+  "author": "Monique Charles",
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^7.6.0"

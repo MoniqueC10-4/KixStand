@@ -22,21 +22,10 @@ function saveBoxItemsToFile(boxItems) {
 
 loadBoxItems()
 
-function addToBox() {
+function addToBox(item) {
     const boxItems = loadBoxItems();
-    for (let item of kixInv) {
-        if (item.inStock) {
-            boxItems.push(item)
-        }
-    }
+    boxItems.push(item);
     saveBoxItemsToFile(boxItems);
-}
-
-function viewBox() {
-    const boxItems = loadBoxItems();
-    for (let item of boxItems) {
-        console.log(`Product: ${item.product}, Quantity: ${item.quantity}, Price: ${item.price}`);
-    }
 }
 
 function loadKixInventory() {
@@ -93,9 +82,9 @@ function deleteKix(i) {
     return "Not found";
 }
 
-function updateKix(i, name, priceInCents, inStock, colorway) {
+function updateKix(i, name, priceInCents, colorway) {
 if (i >= 0 && i < kixInv.length) {
-    kixInv[i] = { id, name, priceInCents, inStock, colorway };
+    kixInv[i] = { id, name, priceInCents, colorway };
     saveKixInvToFile();
     return "Kicked Up";
 }
@@ -104,7 +93,7 @@ return "Not found";
 
 function viewBox() {
     for (let item of box) {
-        console.log(`name: ${item.name}, Quantity: ${item.quantity}, Price: ${item.price}`);
+        console.log(`name: ${item.name}, Price: ${item.price}`);
     }
 }
 function calculateTotalPrice() {
@@ -126,6 +115,10 @@ module.exports = {
     kixDetails,
     deleteKix,
     updateKix,
+    loadBoxItems,
+    loadKixInventory,
+    loadBox,
+    saveBoxItemsToFile,
     addToBox,
     viewBox,
     calculateTotalPrice,

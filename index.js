@@ -1,7 +1,7 @@
 const shoesAPI = require("./src/kixstand");
 
 const { faker } = require("@faker-js/faker");
-const fs = require("fs");
+const fs = require("fs").promises;
 const dataFolder = "data";
 const dataFilePath = `${dataFolder}/products.json`;
 
